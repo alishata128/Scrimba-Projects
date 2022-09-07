@@ -5,7 +5,7 @@ Projects on Scrimba Courses
   <h1>
 Passenger Counter
 </h1>
-<a href="https://alishata128.github.io/Scrimba-Projects/Passenger%20Counter/index.html" target="_blank">Live Preview</a>
+<a target="_blank" href="https://alishata128.github.io/Scrimba-Projects/Passenger%20Counter/index.html" target="_blank">Live Preview</a>
   
   <hr>
   <h1>
