@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.overlay-w{
+    position: absolute;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    bottom: 50%;
+    transform: translateY(50%);
+    filter: opacity(50%);
+    z-index: -2;
+}
+
+#count-el{
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+#increment-btn{
+    background-color: darkred;
+    width: 250px;
+}
+
+#increment-btn:active{
+    background-color: #E3242B;
+    transition: all 0s;
+}
+
+#save-btn{
+    background-color: darkgreen;
+    width: 250px;
+}
+
+#save-btn:active{
+    background-color: #00c04b;
+    transition: all 0.3s;
+}
+
+#clear-btn{
+    width: 250px;
+}
+
+
+
+#clear-btn:active{
+    background-color: lightblue;
+
+}
+
+@media(max-width:576px) {
+    #buttons{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+

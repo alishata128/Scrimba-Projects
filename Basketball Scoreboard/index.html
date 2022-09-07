@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" async></script>
+  </head>
+  <body>
+    <img src="./assets/GettyImages-1238813929.jpg" alt="" class="bg" />
+    <div class="container" id="container">
+      <div class="home">
+        <h1 class="board-title-home">HOME</h1>
+        <div class="home-score">
+          <div class="home-points-text" id="home-score-text">0</div>
+        </div>
+        <div class="add-points-btns-home">
+          <button class="plus-one-point" onclick="plusOne(homeScoreText)">
+            +1
+          </button>
+          <button class="plus-two-point" onclick="plusTwo(homeScoreText)">
+            +2
+          </button>
+          <button class="plus-three-point" onclick="plusThree(homeScoreText)">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="board">
+        <h1 class="board-title-home">GUEST</h1>
+        <div class="home-score" id="home-score">
+          <div class="home-points-text" id="guest-score-text">0</div>
+        </div>
+        <div class="add-points-btns-home">
+          <button class="plus-one-point" onclick="plusOne(boardScoreText)">
+            +1
+          </button>
+          <button class="plus-two-point" onclick="plusTwo(boardScoreText)">
+            +2
+          </button>
+          <button class="plus-three-point" onclick="plusThree(boardScoreText)">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--
+
+        https://www.figma.com/file/YC48MCx4frBFtYoz6rNJE6/Basketball-Scoreboard?node-id=0%3A1
+
+    -->
+  </body>
+</html>

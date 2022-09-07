@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'cursed timer';
+    src: url(./assets/CursedTimerULiL.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.container{
+    position: absolute;
+    top:130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #1B244A;
+    border-radius: 10px;
+
+}
+@media (max-width:576px) {
+    .container{
+        position: absolute;
+    top: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* width: 100vw; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border-radius: 10px; */
+    /* gap: 100px; */
+    background-color: #1B244A;    }
+}
+
+.home, .board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap :10px;
+}
+
+.board-title-home{
+    font-family: 'Poppins';
+    color: #F9FAFB;
+    font-size: 2.5em;
+}
+
+.home-score{
+    background: #080001;
+    width: 155px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.home-points-text{
+    color: #F94F6D;
+    font-family: 'cursed timer';
+    font-size: 90px;
+    font-weight: 400;
+
+}
+
+.add-points-btns-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 155px;
+    height: 45px;
+}
+
+.plus-one-point, .plus-two-point, .plus-three-point {
+    background: transparent;
+    outline: 0;
+    border: 2px solid #9AABD8;
+    width: 45px;
+    height: 45px;
+    color: #9AABD8;
+    border-radius: 5px;
+    font-family: 'cursed timer', sans-serif;
+    font-size: 18px;
+}
+

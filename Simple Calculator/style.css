@@ -1,0 +1,95 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10%;
+}
+
+.calc-area{
+    margin-bottom: 1.5em;
+}
+
+.calc-area > input {
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid black;
+    font-size: 1.8em;
+    width: 50px;
+}
+
+.calc-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.controls{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.multiply{
+    position: relative;
+    transform: translateX(120%);
+}
+
+
+.result{
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.result > a{
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.result > span{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+@media (max-width:576px) {
+    .controls{
+        display: flex;
+        flex-direction: column;
+    }
+    .multiply{
+        transform: translateX(0%);
+    }
+}

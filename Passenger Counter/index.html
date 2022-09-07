@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrimba Passenger Counter</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./index.js" async></script>
+    <script src="./js/bootstrap.min.js" async></script>
+  </head>
+  <body
+    style="
+      background: url('./assets/London_Train_Station.jpg') fixed center
+        no-repeat;
+      background-size: cover;
+    "
+    class="bg-image d-flex align-items-center justify-content-center"
+  >
+    <div class="overlay-w"></div>
+    <div
+      class="container-fluid d-flex flex-column align-items-center justify-content-center my-4"
+      id="container"
+    >
+      <p class="h1 mb-3">People entered:</p>
+      <p class="h1" id="count-el">0</p>
+      <div class="d-flex gap-4" id="buttons">
+        <button
+          class="btn btn-danger mt-3"
+          id="increment-btn"
+          onclick="increment()"
+        >
+          INCREMENT
+        </button>
+
+        <button class="btn btn-success mt-3" id="save-btn" onclick="save()">
+          SAVE
+        </button>
+
+        <button class="btn btn-info mt-3" id="clear-btn" onclick="clearAll()">
+          CLEAR
+        </button>
+      </div>
+      <p id="save-el" class="fw-bold fs-5 mt-3"></p>
+    </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBFtZdgnLz6PkAEDF_fJY4o4_qVRmK6-DE",
+        authDomain: "scrimbapassengercounter.firebaseapp.com",
+        projectId: "scrimbapassengercounter",
+        storageBucket: "scrimbapassengercounter.appspot.com",
+        messagingSenderId: "543258324264",
+        appId: "1:543258324264:web:ec674eee2677746665341d",
+        measurementId: "G-W8984DZSCQ",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
