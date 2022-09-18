@@ -1,0 +1,70 @@
+*::after,*::backdrop,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    
+}
+
+.solarized{
+    --baseColor:#002b36;
+    --baseColor2:#073642;
+    --baseColor3:#eee8d5;
+    --yellow: #b58900;
+    --orange:#cb4b16;
+    --red:#dc322f;
+    --magenta:#d33682;
+    --blue:#268bd2;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    background-color: #222;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: "Poppins";
+    color: aliceblue;
+}
+
+.header > h1{
+    font-size: 4vw;
+}
+
+.header > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+    width: 40vw;
+}
+
+
+.main-content{
+    background-color: aliceblue;
+    width: inherit;
+    height: 100%;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+.main-content > p {
+    font-size: 0.5em;
+    text-align: center;
+    
+}

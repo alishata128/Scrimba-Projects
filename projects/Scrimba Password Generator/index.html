@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrimba Random Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" async></script>
+  </head>
+  <body>
+    <div class="github">
+      <i class="fa-brands fa-github"></i>
+    </div>
+    <div id="container">
+      <i class="fa-solid fa-moon" id="moon"></i>
+      <div id="header">
+        <h1 id="heading">Generate a</h1>
+        <h1 class="secHeading">random password</h1>
+        <p class="support-text">Never use an insecure password again.</p>
+      </div>
+
+      <div class="newDiv">
+        <button class="genBtn" id="genBtn">Generate Passwords</button>
+        <div class="clear">
+          <i class="fa-regular fa-circle-xmark">x</i>
+        </div>
+        <span class="passLen" id="passLen"></span>
+      </div>
+
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="5"
+          max="15"
+          value=""
+          class="slider"
+          id="myRange"
+        />
+      </div>
+
+      <div class="genBox">
+        <div class="generated1" id="gen1"></div>
+        <div class="generated2" id="gen2"></div>
+      </div>
+      <div class="more" id="more">
+        <div id="checkBNum">
+          <div id="number-el">numbers</div>
+          <div id="symbols-el">symbols</div>
+        </div>
+        <i class="fa-sharp fa-solid fa-arrow-down" id="arrow"></i>
+        <i class="fa-solid fa-rotate-right" id="back"></i>
+      </div>
+    </div>
+    <div class="notify" id="notify">copied to clipboard!</div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBFtZdgnLz6PkAEDF_fJY4o4_qVRmK6-DE",
+        authDomain: "scrimbapassengercounter.firebaseapp.com",
+        projectId: "scrimbapassengercounter",
+        storageBucket: "scrimbapassengercounter.appspot.com",
+        messagingSenderId: "543258324264",
+        appId: "1:543258324264:web:ab7ad374728854e265341d",
+        measurementId: "G-VZF7DRTKZE",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>

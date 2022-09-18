@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "scrimbapassengercounter",
+    "public": "./",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

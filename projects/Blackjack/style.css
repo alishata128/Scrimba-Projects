@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#h1{
+    color: goldenrod;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#message-el{
+    font-style: italic;
+    font-weight: bold;
+}
+#card-el{
+    font-weight: bold;
+}
+
+#sum-el{
+    font-weight: bold;
+}
+
+#button{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #016f32;
+    width: 200px;
+    background: goldenrod;
+    height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#img{
+    position: fixed;
+    min-width: 100%;
+    height: 100%;
+}
+
+@media (max-width:576px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}

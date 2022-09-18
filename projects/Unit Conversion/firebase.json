@@ -1,0 +1,11 @@
+{
+  "hosting": {
+        "site": "scrimbaunitconversion",
+        "public": "./",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

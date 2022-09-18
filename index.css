@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centered-body{
+    background-color: #2b2839;
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.logoArea{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    display: flex;
+    height: auto;
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    transition: fadeOut 5s;
+    
+}
+
+#first, #second, #third, #fourth{
+    width: 350px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+
+#first{
+    background-color: #c6b9ff;
+    align-self: end;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #2c2b3b;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#second{
+    background-color: #d4ddd9;
+    width: 200px;
+    align-self: center;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2c2b3b;
+    font-family: 'Poppins', sans-serif;
+}
+
+#third{
+    background-color: #ebdccf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2c2b3b;
+    font-family: 'Poppins', sans-serif;
+}
+
+#fourth{
+    width: 100px;
+    background-color: #ebdccf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #2c2b3b;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.last-line{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    margin-left: -50px;
+    font-family: 'Poppins', sans-serif;
+}
+
