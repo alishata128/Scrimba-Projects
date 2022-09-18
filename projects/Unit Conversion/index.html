@@ -32,14 +32,14 @@
       class="container-fluid d-flex flex-column align-items-center justify-content-center text-center"
       id="container"
     >
-      <div class="split1 p-5 deep-purple">
+      <div class="split1 p-5 deep-purple waves-effect waves-light" style="cursor: default;">
         <div class="h1 text-light white-text" id="h1">
           Metric/Imperial Unit Conversion
         </div>
         <div class="unit-box text-light pt-3 mb-2" id="unit-box">
           <input type="text" id="unit-box-input" value="20" />
         </div>
-        <button class="waves-effect waves-dark btn white" id="conv-btn">
+        <button class="waves-effect waves-purple btn white" id="conv-btn">
           Convert
         </button>
       </div>
@@ -47,21 +47,28 @@
       <button id="floor-btn" class="waves-effect waves-light purple darken-4">
         <i class="material-icons">percent</i>
       </button>
-      <div class="split2 p-5">
-        <div class="h2 overflow-hidden">Length(Meter/Feet)</div>
+      <div class="split2">
+
+        <div id="lengthDiv" class="waves-effect waves-dark">
+        <div class="h2 overflow-hidden" id="h2">Length(Meter/Feet)</div>
         <p class="lead" id="length">
           20 meters = 65.616 feet | 20 feet = 6.096 meters
         </p>
+        </div>
 
-        <div class="h2 overflow-hidden">Volume(Liters/Gallons)</div>
+        <div id="volumeDiv" class="waves-effect waves-dark">
+        <div class="h2 overflow-hidden" id="h2">Volume(Liters/Gallons)</div>
         <p class="lead" id="volume">
           20 liters = 5.248 gallons | 20 gallons = 75.708 liters
         </p>
+        </div>
 
-        <div class="h2 overflow-hidden">Mass(Kilograms/Pounds)</div>
+        <div id="massDiv" class="waves-effect waves-dark">
+        <div class="h2 overflow-hidden" id="h2">Mass(Kilograms/Pounds)</div>
         <p class="lead" id="mass">
           20 kilos = 44.092 feet | 20 pounds = 9.072 kilos
         </p>
+        </div>
       </div>
 
       <div id="reach-me">

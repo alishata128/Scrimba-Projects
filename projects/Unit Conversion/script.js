@@ -46,48 +46,68 @@ convBtn.addEventListener("click", (event) => {
   unitBoxInput.style.width = unitBoxInput.value.length * 100 + "px";
   convBtn.style.width = unitBoxInput.value.length * 100 + "px";
 
-  lengthContent.innerHTML = `${unitBoxInput.value} meters = ${meter2Feet(
+  lengthContent.innerHTML = `<strong>${
     unitBoxInput.value
-  )} feet | ${unitBoxInput.value} feet = ${feet2Meter(
+  }</strong> meters = <strong>${meter2Feet(
     unitBoxInput.value
-  )} meters`;
+  )}</strong> feet | <strong>${
+    unitBoxInput.value
+  }</strong> feet = <strong>${feet2Meter(unitBoxInput.value)}</strong> meters`;
 
-  volume.innerHTML = `${unitBoxInput.value} liters = ${liter2Gallon(
+  volume.innerHTML = `<strong>${
     unitBoxInput.value
-  )} gallons | ${unitBoxInput.value} gallons = ${gallon2Liter(
+  }</strong> liters = <strong>${liter2Gallon(
     unitBoxInput.value
-  )} liters`;
+  )}</strong> gallons | <strong>${
+    unitBoxInput.value
+  }</strong> gallons = <strong>${gallon2Liter(
+    unitBoxInput.value
+  )}</strong> liters`;
 
-  mass.innerHTML = `${unitBoxInput.value} kilos = ${kilo2Pound(
+  mass.innerHTML = `<strong>${
     unitBoxInput.value
-  )} pounds | ${unitBoxInput.value} pounds = ${pound2Kilo(
+  }</strong> kilos = <strong>${kilo2Pound(
     unitBoxInput.value
-  )} kilos`;
+  )}</strong> pounds | <strong>${
+    unitBoxInput.value
+  }</strong> pounds = <strong>${pound2Kilo(unitBoxInput.value)}</strong> kilos`;
 });
 
-unitBoxInput.addEventListener("keypress", (event) => {
+document.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
     unitBoxInput.style.width = unitBoxInput.value.length * 100 + "px";
     convBtn.style.width = unitBoxInput.value.length * 100 + "px";
 
-    lengthContent.innerHTML = `${
-      unitBoxInput.value.style
-    } meters = ${meter2Feet(unitBoxInput.value)} feet | ${
+    lengthContent.innerHTML = `<strong>${
       unitBoxInput.value
-    } feet = ${feet2Meter(unitBoxInput.value)} meters`;
+    }</strong> meters = <strong>${meter2Feet(
+      unitBoxInput.value
+    )}</strong> feet | <strong>${
+      unitBoxInput.value
+    }</strong> feet = <strong>${feet2Meter(
+      unitBoxInput.value
+    )}</strong> meters`;
 
-    volume.innerHTML = `${unitBoxInput.value} liters = ${liter2Gallon(
+    volume.innerHTML = `<strong>${
       unitBoxInput.value
-    )} gallons | ${unitBoxInput.value} gallons = ${gallon2Liter(
+    }</strong> liters = <strong>${liter2Gallon(
       unitBoxInput.value
-    )} liters`;
+    )}</strong> gallons | <strong>${
+      unitBoxInput.value
+    }</strong> gallons = <strong>${gallon2Liter(
+      unitBoxInput.value
+    )}</strong> liters`;
 
-    mass.innerHTML = `${unitBoxInput.value} kilos = ${kilo2Pound(
+    mass.innerHTML = `<strong>${
       unitBoxInput.value
-    )} pounds | ${unitBoxInput.value} pounds = ${pound2Kilo(
+    }</strong> kilos = <strong>${kilo2Pound(
       unitBoxInput.value
-    )} kilos`;
+    )}</strong> pounds | <strong>${
+      unitBoxInput.value
+    }</strong> pounds = <strong>${pound2Kilo(
+      unitBoxInput.value
+    )}</strong> kilos`;
   }
 });
 
@@ -95,40 +115,64 @@ floorBtn.addEventListener("click", function () {
   count++;
   clicks.push(count);
   if (isOdd(count)) {
-    lengthContent.innerHTML = `${unitBoxInput.value} meters = ${numRounder(
+    lengthContent.innerHTML = `<strong>${
+      unitBoxInput.value
+    }</strong> meters = <strong>${numRounder(
       meter2Feet(unitBoxInput.value)
-    )} feet | ${unitBoxInput.value} feet = ${numRounder(
+    )}</strong> feet | <strong>${
+      unitBoxInput.value
+    }</strong> feet = <strong>${numRounder(
       feet2Meter(unitBoxInput.value)
-    )} meters`;
+    )}</strong> meters`;
 
-    volume.innerHTML = `${unitBoxInput.value} liters = ${numRounder(
+    volume.innerHTML = `<strong>${
+      unitBoxInput.value
+    }</strong> liters = <strong>${numRounder(
       liter2Gallon(unitBoxInput.value)
-    )} gallons | ${unitBoxInput.value} gallons = ${numRounder(
+    )}</strong> gallons | <strong>${
+      unitBoxInput.value
+    }</strong> gallons = <strong>${numRounder(
       gallon2Liter(unitBoxInput.value)
-    )} liters`;
+    )}</strong> liters`;
 
-    mass.innerHTML = `${unitBoxInput.value} kilos = ${numRounder(
+    mass.innerHTML = `<strong>${
+      unitBoxInput.value
+    }</strong> kilos = <strong>${numRounder(
       kilo2Pound(unitBoxInput.value)
-    )} pounds | ${unitBoxInput.value} pounds = ${numRounder(
+    )}</strong> pounds | <strong>${
+      unitBoxInput.value
+    }</strong> pounds = <strong>${numRounder(
       pound2Kilo(unitBoxInput.value)
-    )} kilos`;
+    )}</strong> kilos`;
   } else if (!isOdd(count)) {
-    lengthContent.innerHTML = `${unitBoxInput.value} meters = ${meter2Feet(
+    lengthContent.innerHTML = `<strong>${
       unitBoxInput.value
-    )} feet | ${unitBoxInput.value} feet = ${feet2Meter(
+    }</strong> meters = <strong>${meter2Feet(
       unitBoxInput.value
-    )} meters`;
+    )}</strong> feet | <strong>${
+      unitBoxInput.value
+    }</strong> feet = <strong>${feet2Meter(
+      unitBoxInput.value
+    )}</strong> meters`;
 
-    volume.innerHTML = `${unitBoxInput.value} liters = ${liter2Gallon(
+    volume.innerHTML = `<strong>${
       unitBoxInput.value
-    )} gallons | ${unitBoxInput.value} gallons = ${gallon2Liter(
+    }</strong> liters = <strong>${liter2Gallon(
       unitBoxInput.value
-    )} liters`;
+    )}</strong> gallons | <strong>${
+      unitBoxInput.value
+    }</strong> gallons = <strong>${gallon2Liter(
+      unitBoxInput.value
+    )}</strong> liters`;
 
-    mass.innerHTML = `${unitBoxInput.value} kilos = ${kilo2Pound(
+    mass.innerHTML = `<strong>${
       unitBoxInput.value
-    )} pounds | ${unitBoxInput.value} pounds = ${pound2Kilo(
+    }</strong> kilos = <strong>${kilo2Pound(
       unitBoxInput.value
-    )} kilos`;
+    )}</strong> pounds | <strong>${
+      unitBoxInput.value
+    }</strong> pounds = <strong>${pound2Kilo(
+      unitBoxInput.value
+    )}</strong> kilos`;
   }
 });
